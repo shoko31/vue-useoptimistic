@@ -1,0 +1,42 @@
+{
+  "name": "vue-useoptimistic",
+  "version": "1.0.0",
+  "description": "VueJS version of useOptimistic react hook",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/vue-useoptimistic.umd.cjs",
+  "module": "./dist/vue-useoptimistic.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vue-useoptimistic.js",
+      "require": "./dist/vue-useoptimistic.umd.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
+  },
+  "keywords": [],
+  "author": "Elliott ZWERTVAEGHER <elliott.zz59@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "~20.5.7",
+    "@vitejs/plugin-vue": "~4.3.4",
+    "@vitest/coverage-v8": "~0.34.3",
+    "jsdom": "~22.1.0",
+    "sass": "~1.67.0",
+    "typescript": "~5.2.2",
+    "vite": "~4.4.9",
+    "vite-plugin-dts": "~3.5.3",
+    "vitest": "~0.34.3",
+    "vue-tsc": "~1.8.8"
+  },
+  "dependencies": {
+    "vue": "~3.3.4"
+  }
+}
