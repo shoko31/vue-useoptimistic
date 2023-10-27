@@ -7,6 +7,7 @@ import dts from "vite-plugin-dts";
 const NAME = "vue-useoptimistic";
 
 export default defineConfig(({ mode }) => ({
+  publicDir: mode === "production" ? false : "public",
   plugins: [
     vue(),
     dts({ exclude: [resolve(__dirname, `src/demo/**`), "**/*.test.ts"] }),

@@ -12,7 +12,8 @@
   "exports": {
     ".": {
       "import": "./dist/vue-useoptimistic.js",
-      "require": "./dist/vue-useoptimistic.umd.cjs"
+      "require": "./dist/vue-useoptimistic.umd.cjs",
+      "types": "./dist/main.d.ts"
     }
   },
   "scripts": {
@@ -23,7 +24,12 @@
     "test": "vitest",
     "coverage": "vitest run --coverage"
   },
-  "keywords": [],
+  "keywords": [
+    "vue",
+    "vue3",
+    "useOptimistic",
+    "optimistic"
+  ],
   "author": "Elliott ZWERTVAEGHER <elliott.zz59@gmail.com>",
   "license": "MIT",
   "devDependencies": {
@@ -40,5 +46,13 @@
   },
   "dependencies": {
     "vue": "~3.3.4"
-  }
+  },
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/shoko31/vue-useoptimistic"
+  },
+  "bugs": {
+    "url": "https://github.com/shoko31/vue-useoptimistic/issues"
+  },
+  "homepage": "https://github.com/shoko31/vue-useoptimistic"
 }
