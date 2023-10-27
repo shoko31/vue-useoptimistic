@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <defs>
+    <style>.b{fill:none;stroke:#35495e;}.a{fill:none;stroke:#41b883;}</style>
+  </defs>
+  <circle class="a" cx="500" cy="500" r="320" stroke-width="150" />
+  <circle class="b" cx="500" cy="500" r="180" stroke-width="140" />
+</svg>
