@@ -7,7 +7,10 @@ import dts from "vite-plugin-dts";
 const NAME = "vue-useoptimistic";
 
 export default defineConfig(({ mode }) => ({
-  plugins: [vue(), dts({ include: resolve(__dirname, `src/main.ts`) })],
+  plugins: [
+    vue(),
+    dts({ exclude: [resolve(__dirname, `src/demo/**`), "**/*.test.ts"] }),
+  ],
   esbuild: {
     drop: mode === "production" ? ["console", "debugger"] : [],
   },

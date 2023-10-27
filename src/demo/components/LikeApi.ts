@@ -8,7 +8,9 @@ export async function serverLike(liked = true, errorRate: number = 0.3) {
   return new Promise<{ liked: boolean; numberOfLikes: number }>(
     (resolve, reject) => {
       setTimeout(() => {
-        if (Math.random() > 1 - Math.max(0, Math.min(errorRate, 1))) reject();
+        const t = Math.random();
+        console.log("rand", t, 1 - Math.max(0, Math.min(errorRate, 1)));
+        if (t > 1 - Math.max(0, Math.min(errorRate, 1))) reject();
         else resolve({ liked, numberOfLikes: liked ? 6 : 5 });
       }, 5000);
     }
