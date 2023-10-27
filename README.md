@@ -1,6 +1,8 @@
 # vue-useoptimistic
 Vue3 optimistic values' hook, Inspired by react useOptimistic hook
 
+[Demo](https://shoko31.github.io/vue-useoptimistic/)
+
 # Install
 
 `npm install vue-useoptimistic`
